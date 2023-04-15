@@ -1,33 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Indie Flower', cursive;
     text-align: center;
-    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
 }
 
-h1 {
-    color: #1e90ff;
-}
-
-#fact-container {
-    max-width: 800px;
+#whale-image {
+    width: 100%;
+    max-width: 300px;
+    display: block;
     margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
 }
 
-#fact-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #1e90ff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+#fact-text {
+    font-size: 24px;
+    margin: 20px 0;
+    transition: opacity 0.5s ease-in;
+    max-width: 50vw;
 }
 
-#fact-button:hover {
-    background-color: #63a8ff;
+#click-info {
+    font-size: 14px;
+    color: rgb(155, 155, 155);
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    #fact-text {
+        max-width: 95vw;
+    }
 }
